@@ -1,6 +1,9 @@
 {
   "name": "nasa-react",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.19.0"
+  },
   "main": "app.js",
   "author": "Jason McDermott",
   "license": "MIT",
