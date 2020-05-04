@@ -1,0 +1,51 @@
+.iss-container {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    color: $white;
+
+    h2 {
+        text-align: center;
+        font-size: 2.4em;
+    }
+
+    .picture {
+        width:100%;
+    }
+
+    .boxed {
+        background-color:rgba(0, 0, 0, 0.75);
+    }
+
+    .top-left {
+        font-size: xx-large;
+        text-align: center;
+        text-transform: uppercase; 
+        padding: 10px;
+        position: absolute;
+        width: 260px;
+        left: 0px;
+        top: 0px;
+    
+        
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    .bottom-right {
+        position: absolute;
+        width: 448px;
+        height: 120px;
+        right: 0px;
+        bottom: 0px;
+        padding: 10px;
+    
+        .label {
+            list-style: none;
+            height: 60px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }    
+}

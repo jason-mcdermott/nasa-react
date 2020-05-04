@@ -9,16 +9,14 @@ import SpaceFacts from '../components/SpaceFacts'
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div>
-            <Header />
-            <Switch>
-                <Route path="/" component={App} exact={true} />
-                <Route path="/potd" component={PictureOfTheDay} />
-                <Route path="/iss" component={ISSPosition} />
-                <Route path="/sf" component={SpaceFacts} />
-                <Route component={NotFound}/>
-            </Switch>
-        </div>
+        <Header />
+        <Switch>
+            <Route path="/" component={App} exact={true} />
+            <Route path="/pic-of-the-day" component={PictureOfTheDay} />
+            <Route path="/iss-position" component={ISSPosition} />
+            <Route path="/space-facts" component={SpaceFacts} />
+            <Route component={NotFound}/>
+        </Switch>
     </BrowserRouter>
 )
 
