@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-const NASA_APOD_API_KEY = process.env.NASA_APOD_API_KEY //|| require('../../config').NASA_APOD_API_KEY
+const NASA_APOD_API_KEY = process.env.NASA_APOD_API_KEY || require('../../config').NASA_APOD_API_KEY
 
 export default class PictureOfTheDay extends React.Component {
 
