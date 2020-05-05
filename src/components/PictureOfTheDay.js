@@ -38,28 +38,28 @@ export default class PictureOfTheDay extends React.Component {
         const { error, isLoaded, picture } = this.state
         if (error) {
             return <div>Error: {error.message}</div>
-        } else if (!isLoaded) {
-            return (
-                <div className="potd-container">
-                    <img src={picture.url} className="picture" alt="picture of the day" />
-                    <div className="top-left boxed">
-                        Pic of the Day
-                    </div>
-                    <div className="bottom-right boxed">
-                        <div className="title">{picture.title}</div>
-                        <div className="description module overflow">
-                            <p>{picture.explanation}</p>
-                        </div>
-                        <div className="read-more">
-                            <NavLink to="/pic-of-the-day" activeClassName="is-active">(read more)</NavLink>
-                        </div> 
-                    </div>
-                </div>
-            )
+        // } else if (!isLoaded) {
+        //     return (
+        //         <div className="potd-container">
+        //             <img src="../../../placeholder.jpg" className="picture" alt="picture of the day" />
+        //             <div className="top-left boxed">
+        //                 Pic of the Day
+        //             </div>
+        //             <div className="bottom-right boxed">
+        //                 <div className="title">{picture.title}</div>
+        //                 <div className="description module overflow">
+        //                     <p>{picture.explanation}</p>
+        //                 </div>
+        //                 <div className="read-more">
+        //                     <NavLink to="/pic-of-the-day" activeClassName="is-active">(read more)</NavLink>
+        //                 </div> 
+        //             </div>
+        //         </div>
+        //     )
         } else {
             return (
                 <div className="potd-container">
-                    <img src="../../../placeholder.jpg" className="picture" alt="picture of the day" />
+                    <img src={picture.url} className="picture" alt="picture of the day" />
                     <div className="top-left boxed">
                         Pic of the Day
                     </div>
